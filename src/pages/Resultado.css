@@ -1,0 +1,26 @@
+.resultado-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.feedback {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.btn-primario {
+  margin-top: 2rem;
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.grafico-colunas {
+  margin-top: 2rem;
+}
