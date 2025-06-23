@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
 
-/* Estilos gerais */
+/* Reset e base */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,35 +12,37 @@ body {
   background-color: #F9FAFB;
   color: #1F2937;
   min-height: 100vh;
-  overflow-x:hidden ;
+  
 }
 
 /* Container principal */
 .trilhas-container {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  height: 100vh;
   width: 100%;
+  
 }
 
-/* Cabeçalho */
+/* Cabeçalho da tela de trilha */
 .trilhas-header {
-  background-color: white;
-  padding: 1rem 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 50;
+  background-color: white;
   width: 100%;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .header-content {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 5 rem 2rem;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -79,15 +81,30 @@ body {
   color: #1F2937;
 }
 
+.perfil-btn {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.perfil-btn:hover {
+  background-color: #3730a3;
+}
+
 /* Conteúdo principal */
 .trilhas-content {
   flex: 1;
   padding: 3rem 2rem;
-  max-width: 1440px;
-  margin: 0 auto;
-  width: 100%;
+  padding-top: 120px; /* Garante que o conteúdo não fique sob o cabeçalho */
+  box-sizing: border-box;
 }
 
+/* Intro */
 .trilhas-intro {
   text-align: center;
   margin-bottom: 4rem;
@@ -115,7 +132,6 @@ body {
   gap: 2rem;
   width: 100%;
 }
-
 
 /* Card de trilha */
 .trilha-card {
@@ -186,7 +202,7 @@ body {
 
 /* Barra de progresso */
 .trilha-progresso {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .progresso-barra {
@@ -231,6 +247,12 @@ body {
   transform: translateY(0);
 }
 
+.trilha-botao-wrapper {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
 /* Rodapé */
 .trilhas-footer {
   background-color: white;
@@ -268,29 +290,56 @@ body {
   }
 }
 
-/* Responsividade para telas menores (tablets) */
+/* Responsividade para tablets */
 @media (max-width: 768px) {
   .trilhas-intro h1 {
     font-size: 2.5rem;
   }
-  
+
   .trilhas-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
 }
 
-/* Responsividade para dispositivos móveis */
+/* Responsividade para celulares */
 @media (max-width: 640px) {
   .trilhas-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .trilhas-content {
     padding: 2rem 1.5rem;
+    padding-top: 120px;
   }
-  
+
   .trilhas-intro h1 {
     font-size: 2rem;
   }
 }
+.resultado-geral-acesso {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  margin-top: -1rem;
+}
+
+.btn-resultado-geral {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.btn-resultado-geral:hover {
+  background-color: #3730a3;
+}
+

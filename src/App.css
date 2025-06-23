@@ -1,31 +1,54 @@
-body {
-  font-family: Arial, sans-serif;
+/* Garante comportamento consistente */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
   margin: 0;
   padding: 0;
+  
+  font-family: Arial, sans-serif;
   background-color: #f4f4f9;
+  overflow-x: hidden; /* evita scroll lateral */
 }
 
+/* Conteúdo principal com scroll vertical */
 .App {
-  text-align: center;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden; /* impede scroll horizontal */
 }
 
-header {
+/* Cabeçalho fixo GLOBAL */
+.header-global {
   background-color: #6c63ff;
-  padding: 20px;
+  padding: 24px;
   color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
+
+
+/* Título principal */
 h1 {
   font-size: 3em;
   font-weight: bold;
+  margin: 0;
 }
 
 p {
   font-size: 1.2em;
   font-weight: normal;
+  margin: 0;
 }
 
+/* Botões padrão */
 button {
   background-color: #6c63ff;
   color: white;
@@ -39,4 +62,17 @@ button {
 
 button:hover {
   background-color: #5a53e6;
+}
+
+/* Área de conteúdo rolável */
+.content {
+  flex: 1;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.with-global-header {
+  padding-top: 80px;
 }

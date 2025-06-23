@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Nunito', sans-serif;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom right, #EFF6FF, #F5F3FF);
+}
+
+.criar-conta-wrapper {
+  width: 100%;
+  padding: 8rem 1rem 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.criar-conta-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.criar-conta-box {
+  background-color: white;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  transition: all 0.3s;
+}
+
+.criar-conta-box:hover {
+  transform: scale(1.01);
+}
+
+.criar-conta-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #1F2937;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.criar-conta-subtitle {
+  color: #6B7280;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.criar-conta-input-container {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.criar-conta-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #E5E7EB;
+  border-radius: 0.75rem;
+  color: #4B5563;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.criar-conta-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3);
+  border-color: #6f79ac;
+}
+
+.avatar-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.criar-conta-button {
+  width: 100%;
+  background: linear-gradient(to right, #6366F1, #A855F7);
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  transition: all 0.3s;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.criar-conta-button:hover {
+  background: linear-gradient(to right, #4F46E5, #9333EA);
+  transform: translateY(-2px);
+}
+
+.criar-conta-button:active {
+  transform: translateY(0);
+}
+
+.criar-conta-signup-link {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.criar-conta-signup-link p {
+  color: #6B7280;
+  margin-bottom: 0.5rem;
+}
+
+.criar-conta-voltar-link {
+  color: #4F46E5;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.criar-conta-voltar-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  html, body {
+    align-items: flex-start;
+    padding-top: 2rem;
+  }
+
+  .criar-conta-box {
+    padding: 2rem;
+  }
+
+  .criar-conta-input {
+    font-size: 0.95rem;
+  }
+
+  .criar-conta-button {
+    font-size: 0.95rem;
+  }
+
+  .avatar-wrapper {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+}

@@ -24,7 +24,8 @@ body {
 /* Cabeçalho */
 .trilha-perguntas-header {
   background-color: white;
-  padding: 1rem 0;
+  padding: 2rem 0; /* Aumenta o espaço interno */
+  min-height: 100px; /* Garante que não corte nada */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 0;
@@ -101,10 +102,9 @@ body {
 /* Conteúdo principal */
 .trilha-perguntas-content {
   flex: 1;
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 3rem 2rem;
+  width: 100vw;
+  max-width: none;
+  padding: 3rem 4rem;
 }
 
 /* Barra de progresso */

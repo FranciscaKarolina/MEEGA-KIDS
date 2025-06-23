@@ -1,0 +1,89 @@
+.resultado-geral-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  font-family: 'Nunito', sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
+}
+
+.resultado-geral-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #4f46e5;
+  text-align: center;
+  padding-top: 180px; 
+}
+
+.trilha-bloco {
+  margin-bottom: 3rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.trilha-bloco h2 {
+  font-size: 1.8rem;
+  color: #4f46e5;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.5rem;
+}
+
+.dimensao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.75rem 0;
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed #e5e7eb;
+}
+
+.dimensao-nome {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #374151;
+}
+
+.dimensao-media {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 4px 12px;
+  border-radius: 8px;
+  background-color: #e0e7ff;
+  color: #3730a3;
+}
+
+/* Cores por desempenho */
+.dimensao-media.baixa {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+.dimensao-media.media {
+  background-color: #fef9c3;
+  color: #92400e;
+}
+
+.dimensao-media.alta {
+  background-color: #dcfce7;
+  color: #065f46;
+}
+
+.btn-voltar {
+  display: block;
+  margin: 2rem auto 0;
+  padding: 12px 24px;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-voltar:hover {
+  background-color: #3730a3;
+}
